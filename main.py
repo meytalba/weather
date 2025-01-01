@@ -1,6 +1,7 @@
 
 
 import requests
+import streamlit as st
 
 API_KEY = 'e03b584fc0724c28a9271250243112'
 BASE_URL = "http://api.weatherapi.com/v1/current.json"
@@ -33,5 +34,11 @@ def get_weather_data(city_name):
         print("Error: City not found or unexpected response format.")
 
 # Main program
-city = input("Enter the city name: ")
+st.title('what is your city')
+# city = st.text()
+city = st.text_input("Where?", key="city")
+
 get_weather_data(city)
+
+import streamlit as st
+
