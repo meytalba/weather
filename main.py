@@ -3,8 +3,11 @@
 import requests
 import streamlit as st
 
-API_KEY = 'e03b584fc0724c28a9271250243112'
+API_KEY = st.secrets["MY_SECRET"]
 BASE_URL = "http://api.weatherapi.com/v1/current.json"
+
+secret =st.secrets["MY_SECRET"]
+st.text(f"my secret is {secret}, keep it for yourself")
 
 def get_weather_data(city_name):
     try:
