@@ -24,21 +24,18 @@ def get_weather_data(city_name):
         humidity = data['current']['humidity']
 
         # Display the weather data
-        print(f"Weather Information for {location}, {country}:\n")
-        print(f"Temperature: {temperature}°C")
-        print(f"Condition: {condition}")
-        print(f"Humidity: {humidity}%")
+        st.write(f"Weather Information for {location}, {country}:")
+        st.write(f"Temperature: {temperature}°C")
+        st.write(f"Condition: {condition}")
+        st.write(f"Humidity: {humidity}%")
     except requests.exceptions.RequestException as e:
-        print("Error fetching weather data:", e)
+        st.error(f"Error fetching weather data: {e}")
     except KeyError:
-        print("Error: City not found or unexpected response format.")
+        st.error("Error: City not found or unexpected response format.")
 
 # Main program
-st.title('what is your city')
-# city = st.text()
-city = st.text_input("Where?", key="city")
+st.title('Weather Information')
+city = st.text_input("Enter your city:", key="city")
 
-get_weather_data(city)
-
-import streamlit as st
-
+if city:  # Check if the user has entered a city
+    get_weather_data(city)
