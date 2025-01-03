@@ -4,6 +4,7 @@ A simple web application that fetches real-time weather information for any city
 Features:
 
 Fetches live weather data based on user input.
+
 Displays:
 
 Current temperature (°C).
