@@ -1,23 +1,59 @@
 Weather Info App 🌦️
-A simple web application that fetches real-time weather information for any city using the "WeatherAPI" and displays it using Streamlit.
+A simple web application that fetches real-time weather information for any city using the WeatherAPI and displays it using Streamlit.
 
-Features:
-
+Features
 Fetches live weather data based on user input.
-
 Displays:
-
 Current temperature (°C).
 Weather condition (e.g., sunny, cloudy, etc.).
 Humidity level (%).
+Getting Started
 
-Technologies Used:
+Prerequisites
+Python 3.7 or higher.
+A valid API key from WeatherAPI.
 
-Streamlit for the web interface.
-"WeatherAPI" a free weather API for fetching weather data.
-Python for backend scripting.
+Installation
+Clone this repository:
+git clone https://github.com/your-username/weather-info-app.git
+cd weather-info-app
 
-Security:
+Install the required dependencies:
+pip install -r requirements.txt
 
-This project uses st.secrets to securely store sensitive information like API keys.
-Make sure to add .streamlit/secrets.toml to .gitignore to prevent accidental exposure of sensitive data.
+Configure your API key:
+
+If you are running the app locally, create a .streamlit/secrets.toml file in the root directory.
+
+Add your API key to the file:
+MY_SECRET = "your_api_key_here"
+Note: Ensure the .streamlit/secrets.toml file is included in your .gitignore file to keep your API key secure and prevent it from being pushed to GitHub.
+
+If you are deploying the app using Streamlit Cloud, add the API key in the Secrets Management section of the app's settings. The key should be named MY_SECRET to match the code.
+
+Usage
+Run the Streamlit app:
+streamlit run main.py
+
+Open the app in your browser at http://localhost:8501.
+Enter a city name in the text box to retrieve and display the current weather data.
+
+Example
+Input: London
+Output:
+Weather Information for London, United Kingdom:
+Temperature: 18°C
+Condition: Clear
+Humidity: 65%
+
+Project Structure
+weather-info-app/
+├── main.py          # Main application script
+├── requirements.txt # List of dependencies
+├── README.md        # Project documentation
+└── .streamlit/      # Directory for secrets.toml (not included in GitHub repository)
+    └── secrets.toml # Contains the API key (for local use only)
+Security
+The app uses st.secrets to securely manage sensitive information like the WeatherAPI key.
+Ensure the .streamlit/secrets.toml file is added to .gitignore for local development.
+When deploying to Streamlit Cloud, use the built-in Secrets Management feature to add your API key.
