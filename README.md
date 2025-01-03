@@ -1,5 +1,5 @@
 Weather Info App 🌦️
-A simple web application that fetches real-time weather information for any city using the WeatherAPI and displays it using Streamlit.
+A simple web application that fetches real-time weather information for any city using the "WeatherAPI" and displays it using Streamlit.
 
 Features:
 
@@ -16,3 +16,7 @@ Technologies Used:
 Streamlit for the web interface.
 "WeatherAPI" a free weather API for fetching weather data.
 Python for backend scripting.
+
+Security
+This project uses st.secrets to securely store sensitive information like API keys.
+Make sure to add .streamlit/secrets.toml to .gitignore to prevent accidental exposure of sensitive data.
