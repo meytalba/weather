@@ -17,6 +17,7 @@ Streamlit for the web interface.
 "WeatherAPI" a free weather API for fetching weather data.
 Python for backend scripting.
 
-Security
+Security:
+
 This project uses st.secrets to securely store sensitive information like API keys.
 Make sure to add .streamlit/secrets.toml to .gitignore to prevent accidental exposure of sensitive data.
