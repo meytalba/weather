@@ -9,6 +9,7 @@ Displays:
 Current temperature (°C).
 Weather condition (e.g., sunny, cloudy, etc.).
 Humidity level (%).
+
 Getting Started
 
 Prerequisites
