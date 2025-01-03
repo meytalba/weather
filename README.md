@@ -9,5 +9,5 @@ Weather condition (e.g., sunny, cloudy, etc.).
 Humidity level (%).
 Technologies Used:
 Streamlit for the web interface.
-WeatherAPI for fetching weather data.
+"WeatherAPI" a free weather API for fetching weather data.
 Python for backend scripting.
