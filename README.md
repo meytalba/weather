@@ -25,7 +25,7 @@ Installation
    
 code:
 
-git clone https://github.com/meytalba/weather.git
+git clone https://github.com/meytalba/weather
 
 cd weather
 
