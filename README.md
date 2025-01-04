@@ -25,7 +25,7 @@ Installation
    
 code:
 
-git clone https://github.com/meytalba/weather
+git clone https://github.com/meytalba/weather.git
 
 cd weather
 
@@ -42,6 +42,7 @@ If you are running the app locally, create a .streamlit/secrets.toml file in the
 Add your API key to the file:
 
 code:
+
 MY_SECRET = "your_api_key_here"
 
 Note: Ensure the .streamlit/secrets.toml file is included in your .gitignore file to keep your API key secure and prevent it from being pushed to GitHub.
