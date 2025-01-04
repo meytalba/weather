@@ -22,6 +22,7 @@ A valid API key from WeatherAPI.
 Installation
 
 1. Clone this repository:
+   
 code:
 
 git clone https://github.com/meytalba/weather
@@ -29,6 +30,7 @@ git clone https://github.com/meytalba/weather
 cd weather
 
 2. Install the required dependencies:
+   
 code:
 
 pip install -r requirements.txt
@@ -38,6 +40,7 @@ pip install -r requirements.txt
 If you are running the app locally, create a .streamlit/secrets.toml file in the root directory.
 
 Add your API key to the file:
+
 code:
 MY_SECRET = "your_api_key_here"
 
