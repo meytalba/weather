@@ -21,17 +21,17 @@ A valid API key from WeatherAPI.
 
 Installation
 
-Clone this repository:
+1. Clone this repository:
 
 git clone https://github.com/meytalba/weather
 
 cd weather
 
-Install the required dependencies:
+2. Install the required dependencies:
 
 pip install -r requirements.txt
 
-Configure your API key:
+3. Configure your API key:
 
 If you are running the app locally, create a .streamlit/secrets.toml file in the root directory.
 
@@ -45,19 +45,19 @@ If you are deploying the app using Streamlit Cloud, add the API key in the Secre
 
 Usage
 
-Run the Streamlit app:
+1. Run the Streamlit app:
 
 streamlit run main.py
 
-Open the app in your browser at http://localhost:8501.
+2. Open the app in your browser at http://localhost:8501.
 
-Enter a city name in the text box to retrieve and display the current weather data.
+3. Enter a city name in the text box to retrieve and display the current weather data.
 
 Example
 
-Input: London
+1. Input: London
 
-Output:
+2. Output:
 
 Weather Information for London, United Kingdom:
 
