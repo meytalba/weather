@@ -1,4 +1,4 @@
-Weather Info App 
+#Weather Info App 
 
 A simple web application that fetches real-time weather information for any city using the WeatherAPI and displays it using Streamlit.
 
