@@ -87,16 +87,6 @@ Condition: Clear
 
 Humidity: 65%
 
-Project Structure
-
-Copy code:
-weather-info-app/
-├── main.py          # Main application script
-├── requirements.txt # List of dependencies
-├── README.md        # Project documentation
-└── .streamlit/      # Directory for secrets.toml (not included in GitHub repository)
-    └── secrets.toml # Contains the API key (for local use only)
-    
 Security
 
 The app uses st.secrets to securely manage sensitive information like the WeatherAPI key.
