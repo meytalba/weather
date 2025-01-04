@@ -22,21 +22,23 @@ A valid API key from WeatherAPI.
 Installation
 
 1. Clone this repository:
+code:
 
 git clone https://github.com/meytalba/weather
 
 cd weather
 
 2. Install the required dependencies:
+code:
 
 pip install -r requirements.txt
 
-3. Configure your API key:
+4. Configure your API key:
 
 If you are running the app locally, create a .streamlit/secrets.toml file in the root directory.
 
 Add your API key to the file:
-
+code:
 MY_SECRET = "your_api_key_here"
 
 Note: Ensure the .streamlit/secrets.toml file is included in your .gitignore file to keep your API key secure and prevent it from being pushed to GitHub.
@@ -46,6 +48,8 @@ If you are deploying the app using Streamlit Cloud, add the API key in the Secre
 Usage
 
 1. Run the Streamlit app:
+
+code:
 
 streamlit run main.py
 
@@ -67,18 +71,14 @@ Condition: Clear
 
 Humidity: 65%
 
-Project Structure:
+Project Structure
 
+Copy code:
 weather-info-app/
-
 ├── main.py          # Main application script
-
 ├── requirements.txt # List of dependencies
-
 ├── README.md        # Project documentation
-
 └── .streamlit/      # Directory for secrets.toml (not included in GitHub repository)
-
     └── secrets.toml # Contains the API key (for local use only)
     
 Security
