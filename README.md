@@ -21,7 +21,7 @@ A valid API key from WeatherAPI.
 Installation
 
 Clone this repository:
-git clone https://github.com/your-username/weather-info-app.git
+git clone https://github.com/meytalba/weather)
 cd weather-info-app
 
 Install the required dependencies:
