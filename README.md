@@ -21,7 +21,7 @@ A valid API key from WeatherAPI.
 Installation
 
 Clone this repository:
-git clone https://github.com/meytalba/weather)
+git clone https://github.com/meytalba/weather
 
 Install the required dependencies:
 pip install -r requirements.txt
