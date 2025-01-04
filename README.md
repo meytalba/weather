@@ -70,6 +70,7 @@ Humidity: 65%
 Project Structure:
 
 weather-info-app/
+
 ├── main.py          # Main application script
 
 ├── requirements.txt # List of dependencies
