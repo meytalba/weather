@@ -63,7 +63,7 @@ If you are deploying the app using Streamlit Cloud, add the API key in the Secre
 
 Usage
 
-1. Run the Streamlit app:
+1. Run the Streamlit app on your terminal:
 
 code:
 
