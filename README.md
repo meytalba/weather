@@ -1,4 +1,4 @@
-#Weather Info App 
+Weather Info App 
 
 A simple web application that fetches real-time weather information for any city using the WeatherAPI and displays it using Streamlit.
 
@@ -16,6 +16,7 @@ Getting Started
 Prerequisites
 
 Python 3.7 or higher.
+
 A valid API key from WeatherAPI.
 
 Installation
@@ -27,6 +28,7 @@ git clone https://github.com/meytalba/weather
 cd weather
 
 Install the required dependencies:
+
 pip install -r requirements.txt
 
 Configure your API key:
@@ -34,7 +36,9 @@ Configure your API key:
 If you are running the app locally, create a .streamlit/secrets.toml file in the root directory.
 
 Add your API key to the file:
+
 MY_SECRET = "your_api_key_here"
+
 Note: Ensure the .streamlit/secrets.toml file is included in your .gitignore file to keep your API key secure and prevent it from being pushed to GitHub.
 
 If you are deploying the app using Streamlit Cloud, add the API key in the Secrets Management section of the app's settings. The key should be named MY_SECRET to match the code.
@@ -42,21 +46,28 @@ If you are deploying the app using Streamlit Cloud, add the API key in the Secre
 Usage
 
 Run the Streamlit app:
+
 streamlit run main.py
 
 Open the app in your browser at http://localhost:8501.
+
 Enter a city name in the text box to retrieve and display the current weather data.
 
 Example
 
 Input: London
+
 Output:
+
 Weather Information for London, United Kingdom:
+
 Temperature: 18°C
+
 Condition: Clear
+
 Humidity: 65%
 
-Project Structure
+Project Structure:
 
 weather-info-app/
 ├── main.py          # Main application script
