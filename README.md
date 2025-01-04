@@ -29,11 +29,23 @@ git clone https://github.com/meytalba/weather.git
 
 cd weather
 
-2. Install the required dependencies:
+2. Install dependencies using Poetry:
    
 code:
 
-pip install -r requirements.txt
+poetry install
+
+This command will:
+
+Install all required dependencies listed in pyproject.toml.
+
+Use exact versions from poetry.lock for consistent builds.
+
+3. Activate the virtual environment (optional):
+
+code:
+
+poetry shell
 
 4. Configure your API key:
 
