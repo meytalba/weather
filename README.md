@@ -55,7 +55,7 @@ If you are deploying the app using Streamlit Cloud, add the API key in the Secre
 
 1. Run the Streamlit app on your terminal:
 
-```streamlit run main.py```
+```poetry run streamlit run main.py```
 
 2. Open the app in your browser at http://localhost:8501.
 
