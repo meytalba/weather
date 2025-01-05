@@ -1,81 +1,68 @@
-Weather Info App 
+# Weather Info App
 
 A simple web application that fetches real-time weather information for any city using the WeatherAPI and displays it using Streamlit.
 
-Features
+## Features
 
-Fetches live weather data based on user input.
-Displays:
-
-Current temperature (°C).
-Weather condition (e.g., sunny, cloudy, etc.).
+ - Fetches live weather data based on user input.
+ - Displays: Current temperature (°C),  Weather condition (e.g., sunny, cloudy, etc.) &
 Humidity level (%).
 
-Getting Started
+## Getting Started
 
-Prerequisites
+**Prerequisites**
 
-Python 3.7 or higher.
+ - Python 3.7 or higher.
+ - A valid API key from WeatherAPI (weatherapi.com).
 
-A valid API key from WeatherAPI.
+**Installation**
 
-Installation
+ 1. Clone this repository:
 
-1. Clone this repository:
-   
-code:
 
-git clone https://github.com/meytalba/weather
-
-cd weather
-
+```
+   git clone https://github.com/meytalba/weather.git
+    
+   cd weather
+```
 2. Install dependencies using Poetry:
    
-code:
-
+```
 poetry install
-
+```
 This command will:
 
 Install all required dependencies listed in pyproject.toml.
 
 Use exact versions from poetry.lock for consistent builds.
 
-3. Activate the virtual environment (optional):
-
-code:
-
-poetry shell
-
-4. Configure your API key:
+3. Configure your API key:
 
 If you are running the app locally, create a .streamlit/secrets.toml file in the root directory.
 
 Add your API key to the file:
 
-code:
-
+```
 MY_SECRET = "your_api_key_here"
+```
 
-Note: Ensure the .streamlit/secrets.toml file is included in your .gitignore file to keep your API key secure and prevent it from being pushed to GitHub.
+**Note: Ensure the .streamlit/secrets.toml file is included in your .gitignore file to keep your API key secure and prevent it from being pushed to GitHub.**
 
 If you are deploying the app using Streamlit Cloud, add the API key in the Secrets Management section of the app's settings. The key should be named MY_SECRET to match the code.
 
-Usage
+**Usage**
 
 1. Run the Streamlit app on your terminal:
 
-code:
-
-streamlit run main.py
+```streamlit run main.py```
 
 2. Open the app in your browser at http://localhost:8501.
 
 3. Enter a city name in the text box to retrieve and display the current weather data.
 
-Example
+**Example**
 
-1. Input: London
+1. Input: ```London```
 
 2. Output:
 
@@ -87,7 +74,7 @@ Condition: Clear
 
 Humidity: 65%
 
-Security
+**Security**
 
 The app uses st.secrets to securely manage sensitive information like the WeatherAPI key.
 Ensure the .streamlit/secrets.toml file is added to .gitignore for local development.
