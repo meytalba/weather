@@ -14,6 +14,7 @@ Humidity level (%).
 
  - Python 3.7 or higher.
  - A valid API key from WeatherAPI (weatherapi.com).
+ - poetry and streamlit installed
 
 **Installation**
 
