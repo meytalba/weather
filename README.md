@@ -39,7 +39,7 @@ Use exact versions from poetry.lock for consistent builds.
 
 3. Configure your API key:
 
-If you are running the app locally, create a .streamlit/secrets.toml file in the root directory.
+create a .streamlit/secrets.toml file in the root directory.
 
 Add your API key to the file:
 
