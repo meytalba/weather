@@ -13,6 +13,7 @@ Humidity level (%).
 **Prerequisites**
 
  - Python 3.7 or higher.
+ - Poetry
  - A valid API key from WeatherAPI (https://www.weatherapi.com/).
 
    
