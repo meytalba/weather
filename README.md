@@ -2,6 +2,8 @@
 
 A simple web application that fetches real-time weather information for any city using the WeatherAPI and displays it using Streamlit.
 
+demo: https://meytalba-weather-main-0sxks3.streamlit.app/
+
 ## Features
 
  - Fetches live weather data based on user input.
